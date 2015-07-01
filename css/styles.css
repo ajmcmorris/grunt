@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/bebasneue-webfont.eot');
+    src: url('../fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue-webfont.woff') format('woff'),
+         url('../fonts/bebasneue-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* GLOBAL */
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.clear{
+	clear:both;
+}
+body{
+	background-color:#324F79 !important;
+	background-image:url(../images/stars.png);
+}
+#city{
+	position:absolute;
+	left:0 !important;
+	right:0 !important;
+	bottom:0 !important;
+	display:block;
+	z-index:0;
+}
+.col-lg-12{
+	padding-left:0 !important;
+	padding-right:0 !important;
+}
+#explore{
+	z-index:99999;
+	padding-top:60px;
+}
+#explore a{
+	background-color:#D64835;
+	opacity:.6;
+	color:#FFFFFF !important;
+}
+#explore a:hover{
+	opacity:1;
+	transition: opacity .75s ease-in-out;
+    -moz-transition: opacity .75s ease-in-out;
+    -webkit-transition: opacity .75s ease-in-out;	
+}
+#main-title{
+	float:left;
+	z-index:99999;
+}
+#main-logo{
+	float:right;
+}
+#main-logo img{
+	padding:30px;
+}
+h1{
+	color:#fff !important;
+	font-size:90px !important;
+	font-family: 'bebas_neueregular' !important;
+}
+h1{
+	padding: 13px 47px 0 40px;
+}
+/* LAYOUT */
+
+/* VIDEO */
+
+/*Media Queries*/
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+h1{
+	color:#fff !important;
+	font-size:45px !important;
+	font-family: 'bebas_neueregular' !important;
+}
+h2{
+	color:#fff !important;
+	font-size:30px !important;
+	font-family: 'bebas_neueregular' !important;
+}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { ... }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { ... }
+
+/* Large desktop */
+@media (min-width: 1200px) { ... }

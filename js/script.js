@@ -13,12 +13,12 @@ window.onload =  function(){
 		  var output = "";
 		  
 		  // If the result of i is divisible by three add Fizz instead of the number
-		  if (i % 3 == 0)
+		  if (i % 3 === 0)
 		  {
 			output += "Fizz";
 		  }
 		  // If the result of i is divisible by five add Buzz instead of the number
-		  if (i % 5 == 0)
+		  if (i % 5 === 0)
 		  {
 			output += "Buzz";
 		  }
@@ -39,7 +39,7 @@ window.onload =  function(){
 			  for (var x = 0; x < size; x++) 
 			  {
 				  // If the result of x and y is divisible by two add a blank space
-					if ((x + y) % 2 == 0)
+					if ((x + y) % 2 === 0)
 					{
 					  board += " ";
 					}
@@ -71,11 +71,11 @@ window.onload =  function(){
 			
 			function testing()
 			{
-				if(number % 2 ==0)
+				if(number % 2 ===0)
 				{
 					return true;
 				}
-				if(number % 2 !=0)
+				if(number % 2 !==0)
 				{
 					return false;
 				}
@@ -106,7 +106,7 @@ window.onload =  function(){
 		function range(start,end,step)
 		{
 			
-			if (step == null) step = 1;
+			if (step === null) step = 1;
 			  var array = [];
 			
 			  if (step > 0) {
@@ -218,11 +218,11 @@ window.onload =  function(){
 		Vector.prototype.add = function(value)
 		{
 			return new Vector(this.x + value.x, this.y + value.y);
-		}
+		},
 		Vector.prototype.minus = function(value)
 		{
 			return new Vector(this.x - value.x, this.y - value.y);
-		}
+		},
 		//Adding new property length to object
 		Object.defineProperty(Vector.prototype, "length", 
 		{

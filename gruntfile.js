@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 	      src: 'src/<%= pkg.name %>.js',
 	      dest: 'build/<%= pkg.name %>.min.js'
 	    }
-	  }
+	  },
 
 	  htmlmin: {                                     // Task 
     dist: {                                      // Target 
@@ -20,19 +20,19 @@ module.exports = function(grunt) {
         collapseWhitespace: true
       },
       files: {                                   // Dictionary of files 
-        'dist/index.html': 'src/index.html',     // 'destination': 'source' 
+        'index.html': 'index.html',     // 'destination': 'source' 
       }
     },
     dev: {                                       // Another target 
       files: {
-        'dist/index.html': 'src/index.html',
+        'index.html': 'index.html',
       }
     }
-  }
+  },
 
   jshint: {
     all: ['Gruntfile.js', 'lib/**/*.js', 'test/**/*.js', 'js/**/*.js']
-  }
+  },
 
   sass: {                              // Task 
     dist: {                            // Target 
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
         'styles.css': 'styles.scss',       // 'destination': 'source' 
       }
     }
-  }
+  },
 
    cssmin: {
   target: {
